@@ -7,33 +7,73 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-.container {
+.container{
   width: 100vw;
   height: 100vh;
   background-image: url(images/GoldenSip-NortholtRd_Hero2.jpg);
   background-position: center;
-  background-size: cover;
-  /* padding: 0 8%;
-    position: absolute; */
+  background-size: cover ;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+  text-align: center;
 }
 
-.logo {
-  width: 400px;
-  position: absolute;
-  bottom: 19%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.message {
-  font-family: "Roboto Mono", monospace;
-  font-size: 3rem;
-  font-weight: 500;
-  background-color: rgba(200, 206, 206, 0.583);
-  color: rgb(240, 240, 239);
+.logo{
+  width: 300px;
+  height: auto;
+  background-color: rgba(240, 246, 208, 0.704);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
+
+.message{
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 500;
+  background-color: rgba(200, 206, 206, 0.6);
+  backdrop-filter: blur(5px);
+  color: rgb(240, 240, 239);
+  border-radius: 15px;
+  padding: 10px 40px;
+  max-width: 80%; /*Prevents texts from hitting screen edges*/
+}
+
+form{
+  display: flex;
+  gap: 10px;
+  background: rgba(255,255 , 255, 0.2);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#email{
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: none;
+  width: 300px;
+  outline: none;
+}
+
+.notify-me{
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  background-color: #e6c24f;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.notify-me:hover{
+  background-color: #b08d26;
+  transform: scale(1.05);
+}
+
