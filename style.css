@@ -7,12 +7,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   background-image: url(images/GoldenSip-NortholtRd_Hero2.jpg);
   background-position: center;
-  background-size: cover ;
+  background-size: cover;
 
   display: flex;
   flex-direction: column;
@@ -22,7 +22,7 @@
   text-align: center;
 }
 
-.logo{
+.logo {
   width: 300px;
   height: auto;
   background-color: rgba(240, 246, 208, 0.704);
@@ -31,7 +31,7 @@
   padding: 10px 10px;
 }
 
-.message{
+.message {
   font-family: "Roboto Mono", monospace;
   font-size: 2.5rem;
   font-weight: 500;
@@ -43,15 +43,15 @@
   max-width: 80%; /*Prevents texts from hitting screen edges*/
 }
 
-form{
+form {
   display: flex;
   gap: 10px;
-  background: rgba(255,255 , 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px;
   border-radius: 20px;
 }
 
-#email{
+#email {
   padding: 15px 25px;
   font-size: 1rem;
   border-radius: 12px;
@@ -60,7 +60,7 @@ form{
   outline: none;
 }
 
-.notify-me{
+.notify-me {
   padding: 15px 30px;
   font-size: 1rem;
   font-weight: bold;
@@ -72,8 +72,52 @@ form{
   transition: transform 0.2s, background 0.2s;
 }
 
-.notify-me:hover{
+.notify-me:hover {
   background-color: #b08d26;
   transform: scale(1.05);
 }
 
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.instagram img {
+  width: 100px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, opacity 0.2s, ease;
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.facebook img{
+  width: 60px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, opacity 0.2s, ease;
+}
+
+.facebook:hover{
+  transform: scale(1.05);
+  opacity: 0.85;
+}
