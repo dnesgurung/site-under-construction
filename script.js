@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("notifyForm");
   const thankYouMessage = document.getElementById("thankYouMessage");
-  const emailInput = document.getElementById("email");
+  
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    form.style.display = "none";
+
     thankYouMessage.textContent =
       "Thank You! We will notify you when we launch.";
+
+      thankYouMessage.classList.add("show");
   });
 
-  emailInput.value = "";
 });
+

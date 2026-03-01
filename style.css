@@ -121,3 +121,15 @@ form {
   transform: scale(1.05);
   opacity: 0.85;
 }
+
+.thank-you-message {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #ffffff
+}
+
+.thank-you-message.show{
+  opacity: 1;
+}
